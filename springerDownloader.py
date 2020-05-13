@@ -39,7 +39,7 @@ def main():
 		except Exception as e:
 			# Maintain a txt file of files not downloaded
 			notDownloadedBooks=open("notDownloadedBooks.csv", "a")
-			notDownloadedBooks.write(str(index) + " , \"" + bookFileName + "\", " + bookLink + "\n")
+			notDownloadedBooks.write(str(index) + " , \"" + bookFileName + "\", " + htmlLink + "\n")
 			notDownloadedBooks.close()
 			print("Not Downloading", str(index), bookFileName)
 			continue
